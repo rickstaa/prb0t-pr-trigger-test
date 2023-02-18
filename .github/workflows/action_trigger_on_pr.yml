@@ -1,0 +1,10 @@
+name: Say hello on PR.
+
+on: ["pull_request"]
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "A pull request was created."
