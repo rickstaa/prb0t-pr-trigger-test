@@ -10,4 +10,4 @@ jobs:
           echo "A push was done."
 
       - name: Display context
-        run : ${{ github }}
+        run : echo ${{ github }}

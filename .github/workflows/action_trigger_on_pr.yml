@@ -10,4 +10,4 @@ jobs:
           echo "A pull request was created."
 
       - name: Display context
-        run : ${{ github }}
+        run : echo ${{ github }}
