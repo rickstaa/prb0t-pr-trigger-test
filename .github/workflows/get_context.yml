@@ -1,13 +1,13 @@
-name: Say hello on PR.
+name: Say hello on push.
 
-on: ["pull_request"]
+on: ["push"]
 
 jobs:
   say_hello:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "A pull request was created."
+          echo "A push was done."
 
       - name: Display context
         run : echo '${{ toJSON(github) }}'
